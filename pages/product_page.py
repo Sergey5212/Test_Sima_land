@@ -13,3 +13,6 @@ class ProductPage(BasePage):
         product_in_the_search_bar = self.browser.find_element(*ProductSearch.PRODUCT_SEARCH_FIELD).text
         product_in_basket = self.browser.find_element(*ProductSearch.PRODUCT_IN_SEARCH).text
         assert product_in_the_search_bar in product_in_basket
+
+    def should_be_page_product(self):
+        self.product_bar_and_basket()

@@ -9,5 +9,4 @@ class TestProductAvailability():
     def test_city_match(self, browser):
         pages = ProductPage(browser, link_registration)
         pages.open()
-        pages.find_a_product()
-        pages.product_bar_and_basket()
+        pages.should_be_page_product()
