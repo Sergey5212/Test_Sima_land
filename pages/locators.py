@@ -25,6 +25,6 @@ class ButtonsOnTheMainPanel():
 
 
 class ProductSearch():
-    PRODUCT_SEARCH_FIELD = (By.XPATH, "//div[@class='XVk3V']/input")
-    BUTTON_SEARCH = (By.XPATH, "//div[@class=/fzq7C']//div/input")
+    PRODUCT_SEARCH_FIELD = (By.CSS_SELECTOR, "input[data-testid='search-field:input']")
+    BUTTON_SEARCH = (By.CSS_SELECTOR, "button[data-testid='search-field:search-button']")
     PRODUCT_IN_SEARCH = (By.CLASS_NAME, "jBE82l")

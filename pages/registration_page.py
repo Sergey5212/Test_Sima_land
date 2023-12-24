@@ -17,7 +17,7 @@ class RegistrationPage(BasePage):
 
     def entering_registration_data(self):
         self.browser.find_element(*EnteringRegistrationData.NAME_REGISTRATION).send_keys('Sergey98765432')
-        self.browser.find_element(*EnteringRegistrationData.CITY_REGISTRATION).send_keys('Челябинск')
+        self.browser.find_element(*EnteringRegistrationData.CITY_REGISTRATION).click()
         self.browser.find_element(*EnteringRegistrationData.PHONE_REGISTRATION).send_keys(9779525188)
         self.browser.find_element(*EnteringRegistrationData.EMAIL_REGISTRATION).send_keys('sergey2000.02.29')
         self.browser.find_element(*EnteringRegistrationData.PASSWORD_REGISTRATION).send_keys('AsdfGhjkl12.,#')
